@@ -1,0 +1,676 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    /*line-height: 1;*/
+    font-family: 'Poppins', sans-serif;
+    color: #525252;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/*media*/
+@media (max-width: 100px) {
+    .info {
+        display: block;
+    }
+    .banner img {
+        display: block;
+    }
+    .card {
+        display: block;
+    }
+}
+
+/*body*/
+body {
+    background: #EBEBEB;
+}
+
+/*header*/
+header {
+    background-color: #FEBD2F;
+    width: 100%;
+    height: 90px;
+    /*Позиционирование элементов*/
+    display: flex;
+    /*Дочерние жлементы: центрирование, добавление пространства между ними*/
+    justify-content: space-between;
+    /**/
+    align-items: center;
+}
+
+header img {
+    transition: 0.3s;
+    margin-left: 25px;
+    width: 118px;
+    height: 46px;
+    cursor: pointer;
+}
+
+header img:hover {
+    transition: 0.3s;
+    width: 178px;
+}
+
+header nav {
+    width: 400px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/*hover: изменение при наведении*/
+
+
+header nav ul li a:hover {
+    transition: 0.3s;
+    color: #000000;
+    font-size: large;
+}
+
+header .auth {
+    margin-right: 25px;
+
+}
+
+header .auth .sign-up {
+    transition: 0.5s all ease;
+    background-color: #fff;
+    border-radius: 25px;
+    width: 107px;
+    height: 45px;
+}
+
+header .auth .sign-up:hover {
+    transition: 0.5s all ease;
+    box-shadow: inset 0 0 0 25px #DCDCDC;
+    z-index: -1;
+}
+
+header .auth .login {
+    padding-right: 33px;
+}
+header .auth button:hover {
+    color: #000;
+}
+
+/*banner*/
+.banner {
+    background-color: #FEBD2F;
+    height: 430px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.group3 {
+    background-image: url("./assets/Group 3.svg");
+    width: 395px;
+    height: 208px;
+    margin-left: 300px;
+    margin-top: -400px;
+}
+
+.vector {
+    background-image: url("./assets/Vector.svg");
+    position: absolute;
+    width: 273px;
+    height: 395px;
+    margin-left: 1200px;
+    margin-top: -168px;
+}
+
+.msg {
+    margin-left: 770px;
+    margin-top: -180px;
+}
+
+#second-msg {
+    margin-left: -50px;
+    margin-top: 75px;
+}
+
+.msg img {
+    width: 25px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 10px;
+}
+
+.msg img:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+#second-heart {
+    width: 25px;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 125px;
+}
+
+/*input*/
+.search form input {
+    position: absolute;
+    background: transparent;
+    box-sizing: border-box;
+    border: 0.5px solid #383333;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 0 55px;
+    width: 500px;
+    height: 55px;
+    left: 570px;
+    top: 600px;
+}
+
+.search form img {
+    position: absolute;
+    margin-left: 588px;
+    margin-top: 320px;
+}
+
+/*list*/
+.recipes img {
+    display: flex;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 310px;
+}
+
+/*pizza*/
+.pizza {
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 185px;
+    height: 55px;
+    font-size: large;
+    box-sizing: border-box;
+    border: 0.5px solid #A9A9A9;
+    border-radius: 50px;
+    margin-top: 35px;
+    margin-left: 160px;
+}
+
+.pizza:hover {
+    transition: 0.4s;
+    box-shadow: inset 100px 0 0 100px #FEBD2F;
+    border: none;
+}
+
+.pizza a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.pizza img {
+    width: 38px;
+    height: 38px;
+    margin-top: 6px;
+    margin-left: -110px;
+}
+
+/*dessert*/
+.dessert {
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 185px;
+    height: 55px;
+    font-size: large;
+    box-sizing: border-box;
+    border: 0.5px solid #A9A9A9;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.dessert:hover {
+    transition: 0.4s;
+    box-shadow: inset 100px 0 0 100px #FEBD2F;
+    border: none;
+}
+
+.dessert a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.dessert img {
+    width: 38px;
+    height: 38px;
+    margin-top: 6px;
+    margin-left: -130px;
+}
+
+/*noodle*/
+.noodle {
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 185px;
+    height: 55px;
+    font-size: large;
+    box-sizing: border-box;
+    border: 0.5px solid #A9A9A9;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.noodle:hover {
+    transition: 0.4s;
+    box-shadow: inset 100px 0 0 100px #FEBD2F;
+    border: none;
+}
+
+.noodle a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.noodle img {
+    width: 38px;
+    height: 38px;
+    margin-top: 6px;
+    margin-left: -125px;
+}
+
+/*cocktails*/
+.cocktails {
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 185px;
+    height: 55px;
+    font-size: large;
+    box-sizing: border-box;
+    border: 0.5px solid #A9A9A9;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.cocktails:hover {
+    transition: 0.4s;
+    box-shadow: inset 100px 0 0 100px #FEBD2F;
+    border: none;
+}
+
+.cocktails a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.cocktails img {
+    width: 38px;
+    height: 38px;
+    margin-top: 6px;
+    margin-left: -135px;
+}
+
+/*salad*/
+.salad {
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 185px;
+    height: 55px;
+    font-size: large;
+    box-sizing: border-box;
+    border: 0.5px solid #A9A9A9;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.salad:hover {
+    transition: 0.4s;
+    box-shadow: inset 100px 0 0 100px #FEBD2F;
+    border: none;
+}
+
+.salad a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.salad img {
+    width: 38px;
+    height: 38px;
+    margin-top: 5px;
+    margin-left: -110px;
+}
+
+/*card*/
+
+.card {
+    position: relative;
+    background-color: #ffffff;
+    width: 582px;
+    height: 356px;
+    margin-left: 560px;
+    margin-top: -350px;
+    border-radius: 25px;
+}
+
+.card img {
+    margin-left: 22px;
+    margin-top: 70px;
+}
+
+.card p {
+    position: relative;
+    color: #383333;
+    font-weight: 600;
+    font-size: 30px;
+    bottom: 250px;
+    left: 260px;
+}
+
+.card .description p {
+    position: relative;
+    color: #383333;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 17px;
+    bottom: 230px;
+    left: 260px;
+}
+
+/*table*/
+.card table {
+    position: relative;
+    width: 300px;
+    bottom: 190px;
+    left: 230px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card table tr th img {
+    position: relative;
+    bottom: 60px;
+    right: 12px;
+}
+
+#time-cook {
+    position: relative;
+    bottom: 65px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.line {
+    position: absolute;
+    bottom: 25px;
+    left: 340px;
+}
+
+/*small-cards*/
+/*top-card*/
+.small-cards .top-card {
+    position: relative;
+    background-color: #000000;
+    width: 340px;
+    height: 150px;
+    left: 1310px;
+    bottom: 365px;
+    border-radius: 25px;
+}
+
+.small-cards h1 {
+    color: #ffffff;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.small-cards img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 1200px;
+    top: 670px;
+    z-index: 1;
+}
+
+/*table*/
+.small-cards table {
+    color: #ffffff;
+    position: relative;
+    width: 300px;
+    top: 45px;
+    left: 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#small-time-cook {
+    position: relative;
+    font-weight: bolder;
+    font-size: 18px;
+    left: 150px;
+    top: 5px;
+}
+
+.small-cards .top-card img {
+    position: relative;
+    width: 34px;
+    height: 17px;
+    left: 78px;
+    top: 100px;
+}
+
+/*bottom-card*/
+.small-cards .bottom-card {
+    position: relative;
+    background-color: #ffffff;
+    width: 340px;
+    height: 150px;
+    left: 1310px;
+    bottom: 295px;
+    border-radius: 25px;
+}
+
+.bottom-card h1 {
+    color: #383333;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.pasta-image {
+    position: absolute;
+    height: 300px;
+    top: 215px;
+    z-index: 1;
+}
+
+/*table*/
+.bottom-card table {
+    color: #383333;
+    position: relative;
+    width: 300px;
+    top: 42px;
+    left: 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#small-time-cook2 {
+    position: relative;
+    font-weight: bolder;
+    font-size: 18px;
+    left: 150px;
+    top: 5px;
+}
+
+.small-cards .bottom-card img {
+    position: relative;
+    width: 34px;
+    height: 17px;
+    left: 78px;
+    top: 100px;
+}
+
+/*sort*/
+.sort {
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 210px;
+    height: 70px;
+    font-size: large;
+    box-sizing: border-box;
+    border: 0.5px solid #A9A9A9;
+    border-radius: 50px;
+    left: 1460px;
+    bottom: 770px;
+    padding: 0 15px;
+}
+
+.sort:hover {
+    transition: 0.4s;
+    box-shadow: inset 100px 0 0 100px #FEBD2F;
+    border: none;
+}
+
+.sort img {
+    position: absolute;
+    width: 25px;
+    left: 165px;
+    top: 30px;
+}
